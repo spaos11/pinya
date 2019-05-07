@@ -898,6 +898,7 @@ html.with-statusbar.device-iphone-x .framework7-root {
   align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  z-index: 1;
 }
 .navbar-inner.stacked {
   display: none;
@@ -5495,7 +5496,7 @@ html.device-pixel-ratio-3 .md li:last-child li .item-inner:after {
   background-color: #000000;
 }
 .md .badge {
-  font-size: 10px;
+  font-size: 15px;
   border-radius: 3px;
   padding: 1px 6px;
   vertical-align: middle;
@@ -8986,7 +8987,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 260px;
+  height: 100%;
   display: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -8999,6 +9000,7 @@ html.with-statusbar.md:not(.device-ios):not(.device-android) .login-screen {
   background: #fff;
   z-index: 12500;
 }
+
 .sheet-modal.modal-in,
 .sheet-modal.modal-out {
   -webkit-transition-duration: 300ms;

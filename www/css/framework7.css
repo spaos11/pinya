@@ -5582,6 +5582,10 @@ button {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  position: fixed;
+  bottom: 10px;
+  width: 90%;
+  z-index: 500;
 }
 .segmented .button,
 .segmented button {

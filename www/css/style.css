@@ -3,6 +3,10 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+.size{
+
+  font-size: 150%;
+}
 .item-title{
   font-size: 90%;
 }
@@ -61,13 +65,14 @@ section{
 }
 
 input[type='submit']{
-  background:green;
-  border:0;
-  width: 50%;
+  font-size: 100%;
+  position: fixed;
+  bottom: 10px;
+  background: #35416D !important;
+  width:80%;
   height: 50px;
   align-items: center;
   color:#fff;
-  padding:10px 15px;
   cursor:pointer;
 }
 
@@ -75,6 +80,16 @@ input[type='submit']{
   background:#f06226;
   padding:10px;
   margin:10px 0;
+  position: fixed;
+  display: inline-block;
+  bottom: 45%;
+  border-radius: 4px;
+  width: 75%;
+  height: 80px;
+  font-size: 30px;
+  text-align: center;
+
+
 }
 
 #results span{

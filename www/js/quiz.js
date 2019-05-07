@@ -11,7 +11,7 @@ var allQuestions = [{
 },
 {
     question: 'If a student loses his/her ID card, he/she should apply for a new one accompanied by an what?',
-    choices: ['Affidavit of loss;', 'Affidavit of loss', 'Affidavit of loss', 'Affidavit of losser'],
+    choices: ['Affidavit of loss', 'Affidavit of loss', 'Affidavit of loss', 'Affidavit of losser'],
     correctAnswer: 0
 },
 {
@@ -141,10 +141,10 @@ var chosenQuestions = [];
     document.getElementById("quizForm").innerHTML += '<h3>'+(i+1)+'. '+allQuestions[chosen].question+'</h3>';
     for(var j = 0; j<allQuestions[chosen].choices.length; j++){
       document.getElementById("quizForm").innerHTML +=
-      '<input type="radio" name=q'+i+' value='+j+' id=q'+i+j+'>'+(j+1)+'. '+allQuestions[chosen].choices[j]+'<br>';
+      '<input type="radio" name=q'+i+' value='+j+' id=q'+i+j+'>' +allQuestions[chosen].choices[j]+'<br>';
     }
   }
-  document.getElementById("quizForm").innerHTML +='<br><br><input type="submit" value="Submit">'  
+  document.getElementById("quizForm").innerHTML +='<br><br><input type="submit" value="SUBMIT">'  
 })();
 
 function submitAnswers(){
@@ -160,7 +160,7 @@ function submitAnswers(){
   //Validation
   for(i = 0; i<total;i++){
     if(answers[i]==null || answers[i] == ''){
-      alert('You missed question ' +(i+1));
+      alert('You missed question no. ' +(i+1));
       return false;
     }   
   }

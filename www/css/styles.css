@@ -70,7 +70,7 @@
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
-  background-color: #36b55c;
+  background-color: #35416D !important;
   transition: .5s ;
 }
 #loadQuote:hover {
@@ -83,7 +83,7 @@
 
 @media (max-width: 1000000px) {
   .quote {
-    font-size: 120%;
+    font-size: 100%;
   }
   .quote:before, .quote:after {
     font-size: 120%;
